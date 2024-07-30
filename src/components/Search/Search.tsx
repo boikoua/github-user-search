@@ -19,7 +19,7 @@ const Search: React.FC<SearchProps> = ({ hasError, onSubmit }) => {
     event.preventDefault();
     const text = event.currentTarget.username.value;
 
-    if (text) {
+    if (text.trim()) {
       onSubmit(text);
       event.currentTarget.reset();
     }

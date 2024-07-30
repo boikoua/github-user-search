@@ -1,7 +1,6 @@
 // Мой локальный тип, который я буду использовать уже в самом приложении
 export type LocalGithubUser = {
   login: string;
-  id: number;
   avatar: string;
   name: string;
   company: string | null;
